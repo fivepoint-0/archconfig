@@ -1,16 +1,7 @@
-# LS aliases
-alias ll="ls -l"
+#!/bin/sh
 
-# CD aliases
-alias ..="cd .."
-alias ...="cd ../.."
-alias ....="cd ../../.."
-alias .....="cd ../../../.."
-
-
-#Misc aliases
-alias listdisplays="xrandr --listmonitors | awk '{print(\$NF);}' | tail -n +2"
-alias serve="python -m SimpleHTTPServer"
+# source me in your script or .bashrc/.zshrc if wanna use cecho
+# source '/path/to/cecho.sh'
 
 # check this var to detect "cecho" being imported
 CECHO_IS_IMPORTED=1

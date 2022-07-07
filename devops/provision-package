@@ -1,0 +1,7 @@
+#!/bin/bash
+
+PKG=$1
+
+pacman --noconfirm -S $PKG
+
+grep -qxF '$PKG' ../packages || echo $PKG >> ../packages
